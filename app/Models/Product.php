@@ -8,7 +8,7 @@ class Product extends Model {
 
     public $timestamps = false;
 
-    protected $fillable = ['cat_id','brand_id','specification_id','name','img','price'];
+    protected $fillable = ['cat_id','brand_id','specification_id','name','img','price','popular'];
 
     protected $primaryKey = 'prod_id';
 

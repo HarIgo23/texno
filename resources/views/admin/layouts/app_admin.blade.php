@@ -48,9 +48,10 @@
                         <ul class="dropdown-menu" role="menu">
                           <li><a href="{{route('category.list')}}">Категории</a></li>
                             <li><a href="{{route('product.list')}}">Товары</a></li>
+                            <li><a href="{{route('specification.list')}}">Описание</a></li>
+                            <li><a href="{{route('brand.list')}}">Производители</a></li>
                             <li><a href="{{route('news.list')}}">Новости</a></li>
                             <li><a href="{{route('review.list')}}">Обзоры</a></li>
-                          <li><a href="#">Материалы</a></li>
                         </ul>
                       </li>
                     </ul>

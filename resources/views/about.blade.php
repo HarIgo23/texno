@@ -143,7 +143,7 @@
                     <div class="row form-group">
                         <div class="col-md-12">
                             <label for="message">Сообщение</label>
-                            <textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Напишите нам в этом поле"></textarea>
+                            <textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Напишите нам в этом поле">{{$message}}</textarea>
                         </div>
                     </div>
                     <div class="form-group">

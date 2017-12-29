@@ -40,16 +40,42 @@
                 </ul>
 
                 <div class="sort">
+
                     <h4>Сортировать по цене:</h4>
+
                     <label class="radio radio-btn">
-                        <input name="price" type="radio" value="desc">По возрастанию
+                        <input name="sort" type="radio" value="SORT_ASC">По возрастанию
                         <div class="radio-btn-indicator"></div>
                     </label>
                     <label class="radio radio-btn">
-                        <input name="price" type="radio" value="asc">По убыванию
+                        <input name="sort" type="radio" value="SORT_DESC">По убыванию
                         <div class="radio-btn-indicator"></div>
                     </label>
+
+                    <h4>Сортировать по алфавиту:</h4>
+
+                    <label class="radio radio-btn">
+                        <input name="sortName" type="radio" value="SORT_ASC">A-Z
+                        <div class="radio-btn-indicator"></div>
+                    </label>
+                    <label class="radio radio-btn">
+                        <input name="sortName" type="radio" value="SORT_DESC">Z-A
+                        <div class="radio-btn-indicator"></div>
+                    </label>
+
+                    <h4>Сортировать по популярности:</h4>
+
+                    <label class="radio radio-btn">
+                        <input name="sortPop" type="radio" value="SORT_ASC">высокая
+                        <div class="radio-btn-indicator"></div>
+                    </label>
+                    <label class="radio radio-btn">
+                        <input name="sortPop" type="radio" value="SORT_DESC">низкая
+                        <div class="radio-btn-indicator"></div>
+                    </label>
+
                 </div>
+
                 <input type="submit" value="сортировать" class="btn btn-primary">
                 {{csrf_field()}}
             </form>

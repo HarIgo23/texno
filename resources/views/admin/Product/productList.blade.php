@@ -14,7 +14,7 @@
                         <td>brand_id/name</td>
                         <td>specification_id</td>
                         <td>name</td>
-                        <td>avaible</td>
+                        <td>avaible|popular</td>
                         <td>img</td>
                         <td>price</td>
                     </tr>
@@ -30,9 +30,8 @@
                             <td> <a class="btn btn-secondary" href="{{--{{route('news.show',['id'=>$product->specification_id])}}--}}"
                                     role="button">{{$product->specification_id}}</a></td>
                             <td>{{$product->name}}</td>
-                            <td>{{$product->avaible}}</td>
+                            <td>{{$product->avaible}} | {{$product->popular}}</td>
                             <td>{{$product->img}}</td>
-                            <td>{{$product->price}}</td>
                             <td>
                                 <a class="btn btn-secondary" href="{{route('product.show',['id'=>$product->prod_id])}}"
                                    role="button">Посмотреть</a>

@@ -44,6 +44,14 @@
                         </div>
 
                         <div class="row form-group">
+                            <div class="col-md-7">
+                                <label for="popular">Популярность</label>
+                                <input type="text" id="popular" value="{{$product->popular}}" name="popular" class="form-control"
+                                       placeholder="Цифры">
+                            </div>
+                        </div>
+
+                        <div class="row form-group">
                             <div class="col-md-12">
                                 <label for="cat_id">Категория -</label>
                                 <select name="cat_id">
