@@ -41,41 +41,17 @@
 
                 <div class="sort">
 
-                    <h4>Сортировать по цене:</h4>
-
-                    <label class="radio radio-btn">
-                        <input name="sort" type="radio" value="SORT_ASC">По возрастанию
-                        <div class="radio-btn-indicator"></div>
-                    </label>
-                    <label class="radio radio-btn">
-                        <input name="sort" type="radio" value="SORT_DESC">По убыванию
-                        <div class="radio-btn-indicator"></div>
-                    </label>
-
-                    <h4>Сортировать по алфавиту:</h4>
-
-                    <label class="radio radio-btn">
-                        <input name="sortName" type="radio" value="SORT_ASC">A-Z
-                        <div class="radio-btn-indicator"></div>
-                    </label>
-                    <label class="radio radio-btn">
-                        <input name="sortName" type="radio" value="SORT_DESC">Z-A
-                        <div class="radio-btn-indicator"></div>
-                    </label>
-
-                    <h4>Сортировать по популярности:</h4>
-
-                    <label class="radio radio-btn">
-                        <input name="sortPop" type="radio" value="SORT_ASC">высокая
-                        <div class="radio-btn-indicator"></div>
-                    </label>
-                    <label class="radio radio-btn">
-                        <input name="sortPop" type="radio" value="SORT_DESC">низкая
-                        <div class="radio-btn-indicator"></div>
-                    </label>
+                    <h4>Сортировка:</h4>
+                    <select name="sort">
+                        <option value="0" >Без сортировки</option>
+                        <option value="1" >По возрастанию</option>
+                        <option value="2" >По убыванию</option>
+                        <option value="3" >A-Z</option>
+                        <option value="4" >Z-A</option>
+                        <option value="5" >Популярности</option>
+                    </select>
 
                 </div>
-
                 <input type="submit" value="сортировать" class="btn btn-primary">
                 {{csrf_field()}}
             </form>

@@ -101,18 +101,27 @@
 
                     </form>
                 </div>
-
+                <a href="{{route('productPage',['categories'=>$category->path,'product'=>$product->name])}}">
+                </a>
                 <div class="col-xs-1 no-margin">
+                    <a href="{{--{{route('sortDefault',['categories'=>$category->path,'brand'=>'Xiaomi'])}}--}}">
                     <img src="/images/mi.png" alt="Xiaomi" class="img-responsive brand">
+                    </a>
                 </div>
                 <div class="col-xs-1 no-margin">
+                    <a href="{{--{{route('sortDefault',['categories'=>$category->path,'brand'=>'Philips'])}}--}}">
                     <img src="/images/philips.png" alt="Philips" class="img-responsive brand">
+                    </a>
                 </div>
                 <div class="col-xs-1 no-margin">
+                    <a href="{{--{{route('sortDefault',['categories'=>$category->path,'brand'=>'Huawei'])}}--}}">
                     <img src="/images/huawei.png" alt="huawei" class="img-responsive brand">
+                    </a>
                 </div>
                 <div class="col-xs-1 no-margin">
+                    <a href="{{--{{route('sortDefault',['categories'=>$category->path,'brand'=>'Meizu'])}}--}}">
                     <img src="/images/meizu.png" alt="meizu" class="img-responsive brand">
+                    </a>
                 </div>
                 <!-- <div class="col-xs-1 no-margin">
                         <img src="images/apple.png" alt="apple" class="img-responsive brand">

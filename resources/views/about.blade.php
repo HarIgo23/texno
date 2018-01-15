@@ -109,11 +109,11 @@
     </div>
 </div>
 
-<div class="gtco-section gto-section-about"><!-- / сделал меньше отступ снизу при слиянии контактов и О НАС -->
+<div id="message" class="gtco-section gto-section-about"><!-- / сделал меньше отступ снизу при слиянии контактов и О НАС -->
     <div class="gtco-container">
         <div class="row">
             <div class="col-md-6 animate-box feedback-form">
-                <h3>Свяжитесь с нами и мы ответим</h3>
+                <h3 >Свяжитесь с нами и мы ответим</h3>
                 <form action="#">
                     <div class="row form-group">
                         <div class="col-md-6">

@@ -44,15 +44,15 @@
                 </ul>
 
                 <div class="sort">
-                    <h4>Сортировать по цене:</h4>
-                    <label class="radio radio-btn">
-                        <input name="price" type="radio" value="desc"  @if($sort=='desc') checked @endif>По возрастанию
-                        <div class="radio-btn-indicator"></div>
-                    </label>
-                    <label class="radio radio-btn">
-                        <input name="price" type="radio" value="asc" @if($sort=='asc') checked @endif>По убыванию
-                        <div class="radio-btn-indicator"></div>
-                    </label>
+                    <h4>Сортировка:</h4>
+                    <select name="sort">
+                        <option value="0" @if(0===$sort) selected @endif>Без сортировки</option>
+                        <option value="1" @if(1===$sort) selected @endif>По возрастанию</option>
+                        <option value="2" @if(2===$sort) selected @endif>По убыванию</option>
+                        <option value="3" @if(3===$sort) selected @endif>A-Z</option>
+                        <option value="4" @if(4===$sort) selected @endif>Z-A</option>
+                        <option value="5" @if(5===$sort) selected @endif>Популярности</option>
+                    </select>
                 </div>
                 <input type="submit" value="сортировать" class="btn btn-primary">
                 {{csrf_field()}}

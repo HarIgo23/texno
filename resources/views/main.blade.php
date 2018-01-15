@@ -41,7 +41,7 @@
                         <form method="post" action="{{route('product.Search')}}">
 
                             <input type="text" class="typeahead" name="search" placeholder="поиск">
-                            <input type="submit" value="">
+                            <input type="submit" class="loop" value="">
                             {{ csrf_field() }}
 
                         </form>

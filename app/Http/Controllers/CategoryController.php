@@ -40,11 +40,13 @@ class CategoryController extends Controller
         $priceList=[];
         $nameList=[];
         $popularList=[];
+        $sort=$request->only('sort');
+        $sort=(int)$sort['sort'];
         $category = Category::where('path', $categories)->first();
         $brands = Brand::where('cat_id',$category->cat_id)->get();
-        $price=$request->only('price');
-        $sortName=$request->only('sortName');
-        $sortPop=$request->only('sortPop');
+        //$price=$request->only('price');
+        //$sortName=$request->only('sortName');
+        //$sortPop=$request->only('sortPop');
         $selectBrands=$request->except('price','sort-name','popular','_token');
         foreach ($selectBrands as $brand=>$value) {
 
@@ -67,7 +69,27 @@ class CategoryController extends Controller
             $nameList[$key]=$row['name'];
             $popularList[$key]=$row['popular'];
         }
-        if($price['price']!=null){
+        switch($sort){
+            case 1:
+                array_multisort($priceList,SORT_ASC,$products);
+                break;
+            case 2:
+                array_multisort($priceList,SORT_DESC,$products);
+                break;
+            case 3:
+                array_multisort($nameList,SORT_ASC,$products);
+                break;
+            case 4:
+                array_multisort($nameList,SORT_DESC,$products);
+                break;
+            case 5:
+                array_multisort($popularList,SORT_ASC,$products);
+                break;
+            default:
+                break;
+
+        }
+        /*if($price['price']!=null){
             if($price['price']=='asc'){
                 array_multisort($priceList,SORT_ASC,$products);
             }
@@ -87,7 +109,7 @@ class CategoryController extends Controller
             }
             else
                 array_multisort($popularList,SORT_DESC,$products);
-        }
+        }*/
         /*array_multisort($priceList,$price,
             $nameList,$sortName,
             $popularList,$sortPop,
@@ -100,15 +122,88 @@ class CategoryController extends Controller
             else
                 rsort($products);
         }*/
-        dd($products);
         return view('categoriesSort', [
             'category' => $category,
             'brands' => $brands,
             'inCat' => 1,
-            'sort'=>$price['price'],
+            'sort'=>$sort,
             'selectedBrands'=>$selectBrands,
             'products' => $products]);
 
     }
+    /*public function sortDefault(Request $request,$categories,$brand){
 
+        switch ($brand){
+            case 'Xiaomi':
+                break;
+            case 'Philips':
+                break;
+            case 'Huawei':
+                break;
+            case 'Meizu':
+                break;
+            default:
+        }
+        $products=[];
+        $priceList=[];
+        $nameList=[];
+        $popularList=[];
+        $sort=$request->only('sort');
+        $sort=(int)$sort['sort'];
+        $category = Category::where('path', $categories)->first();
+        $brands = Brand::where('cat_id',$category->cat_id)->get();
+        //$price=$request->only('price');
+        //$sortName=$request->only('sortName');
+        //$sortPop=$request->only('sortPop');
+        $selectBrands=$request->except('price','sort-name','popular','_token');
+        foreach ($selectBrands as $brand=>$value) {
+
+            $temp=Product::select('price','name','img','popular')
+                ->where([
+                    ['cat_id','=',$category->cat_id],
+                    ['avaible','=',1],
+                    ['brand_id','=',$brand]])
+                ->inRandomOrder()
+                ->get();
+            foreach ($temp as $product){
+                $products[]= ['price'=>$product->price,
+                    'name'=>$product->name,
+                    'img'=>$product->img,
+                    'popular'=>$product->popular];
+            }
+        }
+        foreach ($products as $key=>$row){
+            $priceList[$key]=$row['price'];
+            $nameList[$key]=$row['name'];
+            $popularList[$key]=$row['popular'];
+        }
+        switch($sort){
+            case 1:
+                array_multisort($priceList,SORT_ASC,$products);
+                break;
+            case 2:
+                array_multisort($priceList,SORT_DESC,$products);
+                break;
+            case 3:
+                array_multisort($nameList,SORT_ASC,$products);
+                break;
+            case 4:
+                array_multisort($nameList,SORT_DESC,$products);
+                break;
+            case 5:
+                array_multisort($popularList,SORT_ASC,$products);
+                break;
+            default:
+                break;
+
+        }
+        return view('categoriesSort', [
+            'category' => $category,
+            'brands' => $brands,
+            'inCat' => 1,
+            'sort'=>$sort,
+            'selectedBrands'=>$selectBrands,
+            'products' => $products]);
+    }*/
 }
+

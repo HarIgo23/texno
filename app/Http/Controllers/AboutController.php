@@ -11,7 +11,7 @@ class AboutController extends Controller
 {
     public function index(){
       
-        return view('about');
+        return view('about',['message'=>'']);
         
     }
 
@@ -22,6 +22,5 @@ class AboutController extends Controller
             ->select('name')->first();
         $message='Здраствуйте, я хочу купить '.$product->name;
         return view('about',['message'=>$message]);
-
     }
 }

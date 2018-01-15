@@ -31,6 +31,7 @@ Route::get('/admin','Admin\DashboardController@dashboard')->name('adminPage');
 Route::get('autocomplete','SearchController@autocomplete')->name('autocomplete');
 Route::post('productSearch','SearchController@productSearch')->name('product.Search');
 Route::post('catalog/{categories}','CategoryController@sort')->name('sort');
+/*Route::get('catalog/{categories}/{brand}','CategoryController@sortDefault')->name('sortDefault');*/
 Route::post('buy/{prod_id}','AboutController@buy')->name('buy');
 
 /*
