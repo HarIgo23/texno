@@ -87,7 +87,7 @@
     </div>
 </div>
 
-<div id="gtco-features-2">
+{{--<div id="gtco-features-2">
     <div class="gtco-container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2 text-center gtco-heading">
@@ -117,7 +117,7 @@
             </div>
         </div>
     </div>
-</div>
+</div>--}}
 
 <div id="gtco-testimonial">
     <div class="gtco-container">

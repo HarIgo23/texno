@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Techno-arena</title>
+    <title>{{ config('app.name', 'Laravel') }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content=""/>
     <meta name="keywords" content=""/>
@@ -59,7 +59,7 @@
         <div class="gtco-container">
             <div class="row">
                 <div class="col-xs-2">
-                    <div id="gtco-logo"><a href="{{route('mainPage')}}">TEXHOAPEHA.</a></div>
+                    <div id="gtco-logo"><a href="{{route('mainPage')}}">ABAZABA.</a></div>
                 </div>
                 <div class="col-xs-10 text-right menu-1">
                     <ul>
@@ -93,16 +93,15 @@
     <div class="search_logo">
         <div class="container">
             <div class="row">
-                <div class="col-xs-8">
-                    <form method="post" action="{{route('product.Search')}}">
-                        <input type="text" name="search" placeholder="поиск" class="typeahead search">
-                        <input type="submit" value="">
+                <div class="col-md-8 ">
+                        <form method="post" action="{{route('product.Search')}}">
+                            <input type="text" name="search" placeholder="поиск" class="typeahead search" >
+                            <input type="submit" value="">
                         {{ csrf_field() }}
-
-                    </form>
+                        </form>
                 </div>
-                <a href="{{route('productPage',['categories'=>$category->path,'product'=>$product->name])}}">
-                </a>
+                {{--<a href="{{route('productPage',['categories'=>$category->path,'product'=>$product->name])}}">
+                </a>--}}
                 <div class="col-xs-1 no-margin">
                     <a href="{{--{{route('sortDefault',['categories'=>$category->path,'brand'=>'Xiaomi'])}}--}}">
                     <img src="/images/mi.png" alt="Xiaomi" class="img-responsive brand">
@@ -161,7 +160,7 @@
                         <div class="row copyright">
                             <div class="col-md-12">
                                 <p class="pull-left">
-                                    <small class="block">&copy; 2017 TEXHOAPEHA. Все права защищены.</small>
+                                    <small class="block">&copy; 2017 ABAZABA. Все права защищены.</small>
                                 </p>
                                 <p class="pull-right">
                                 <ul class="gtco-social-icons pull-right">

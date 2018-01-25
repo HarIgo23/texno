@@ -17,98 +17,6 @@
     </div>
 </header>
 
-<div class="gtco-section">
-    <div class="gtco-container">
-        <div class="row animate-box">
-            <div class="col-md-8 col-md-offset-2 text-center gtco-heading">
-                <h2>Почему выбирают нас</h2>
-                <p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat velit eaque aspernatur expedita. Possimus itaque adipisci.</p>
-            </div>
-        </div>
-        <div class="row animate-box">
-            <div class="col-md-6">
-                <div class="feature-left animate-box" data-animate-effect="fadeInLeft">
-                    <span class="icon">
-                        <i class="icon-check"></i>
-                    </span>
-                    <div class="feature-copy">
-                        <h3>Причина</h3>
-                        <p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
-                    </div>
-                </div>
-
-                <div class="feature-left animate-box" data-animate-effect="fadeInLeft">
-                    <span class="icon">
-                        <i class="icon-check"></i>
-                    </span>
-                    <div class="feature-copy">
-                        <h3>Причина</h3>
-                        <p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
-                    </div>
-                </div>
-
-                <div class="feature-left animate-box" data-animate-effect="fadeInLeft">
-                    <span class="icon">
-                        <i class="icon-check"></i>
-                    </span>
-                    <div class="feature-copy">
-                        <h3>Причина</h3>
-                        <p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-
-
-                <div class="feature-left animate-box" data-animate-effect="fadeInLeft">
-                    <span class="icon">
-                        <i class="icon-check"></i>
-                    </span>
-                    <div class="feature-copy">
-                        <h3>Причина</h3>
-                        <p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
-                    </div>
-                </div>
-
-                <div class="feature-left animate-box" data-animate-effect="fadeInLeft">
-                    <span class="icon">
-                        <i class="icon-check"></i>
-                    </span>
-                    <div class="feature-copy">
-                        <h3>Причина</h3>
-                        <p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
-                    </div>
-                </div>
-
-                <div class="feature-left animate-box" data-animate-effect="fadeInLeft">
-                    <span class="icon">
-                        <i class="icon-check"></i>
-                    </span>
-                    <div class="feature-copy">
-                        <h3>Причина</h3>
-                        <p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="gtco-cover gtco-cover-sm" style="background-image:url(images/img_bg_3.jpg);">
-    <div class="overlay"></div>
-    <div class="gtco-container">
-        <div class="row">
-            <div class="col-md-12 col-md-offset-0 text-center">
-                <div class="display-t">
-                    <div class="display-tc animate-box" data-animate-effect="fadeIn">
-                        <h1>Недорого &amp; Быстро</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
 <div id="message" class="gtco-section gto-section-about"><!-- / сделал меньше отступ снизу при слиянии контактов и О НАС -->
     <div class="gtco-container">
         <div class="row">
@@ -160,7 +68,7 @@
                         <li class="address">проспект Независимости, <br> д.1, офис - 4</li>
                         <li class="phone"><a href="tel://1234567920">+ 1235 2355 98</a></li>
                         <li class="email"><a href="mailto:info@yoursite.com">info@yoursite.com</a></li>
-                        <li class="url"><a href="http://texno-arena.by">texno-arena.by</a></li>
+                        <li class="url"><a href="http://texno-arena.by">abazaba.by</a></li>
                     </ul>
                 </div>
 
