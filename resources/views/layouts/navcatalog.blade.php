@@ -95,7 +95,7 @@
             <div class="row">
                 <div class="col-md-8 ">
                         <form method="post" action="{{route('product.Search')}}">
-                            <input type="text" name="search" placeholder="поиск" class="typeahead search" >
+                            <input type="text" name="search" placeholder="поиск" class="typeahead search" autocomplete="off">
                             <input type="submit" value="">
                         {{ csrf_field() }}
                         </form>
@@ -183,7 +183,7 @@
 
             <!-- jQuery -->
             <script src="{{asset('js/jquery.min.js')}}"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.1/bootstrap3-typeahead.min.js"></script>
+            <script src="{{asset('js/bootstrap3-typeahead.min.js')}}"></script>
             <!-- jQuery Easing -->
             <script src="{{asset('js/jquery.easing.1.3.js')}}"></script>
             <!-- Bootstrap -->

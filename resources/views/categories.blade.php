@@ -43,16 +43,17 @@
 
                     <h4>Сортировка:</h4>
                     <select name="sort">
-                        <option value="0" >Без сортировки</option>
-                        <option value="1" >По возрастанию</option>
-                        <option value="2" >По убыванию</option>
-                        <option value="3" >A-Z</option>
-                        <option value="4" >Z-A</option>
-                        <option value="5" >Популярности</option>
+                        <option value="0">Без сортировки</option>
+                        <option value="1">По возрастанию</option>
+                        <option value="2">По убыванию</option>
+                        <option value="3">A-Z</option>
+                        <option value="4">Z-A</option>
+                        <option value="5">Популярности</option>
                     </select>
 
                 </div>
-                <input type="submit" value="сортировать" class="btn btn-primary">
+                <button type="submit" class="btn btn-primary" id="btn-lol">сортировать</button>
+                {{--<input type="button" value="сортировать" class="btn btn-primary" id="btn-lol">--}}
                 {{csrf_field()}}
             </form>
         </div>
@@ -74,14 +75,18 @@
                                     </a>
                                 </h4>
                                 <p class="card-text">{{$product->price}} руб.</p>
-                                <a href="#" class="btn btn-primary">Купить</a>
+                                <form method="post" action="{{route('buy',['prod_id'=>$product->prod_id])}}#message">
+                                    <button type="submit" class="btn btn-primary">купить</button>
+                                    {{--<input type="submit" value="купить" class="btn btn-primary">--}}
+                                    {{csrf_field()}}
+                                </form>
                             </div>
                         </div>
                     </div>
                 @endforeach
             </div>
 
-                {{$products->links()}}
+            {{$products->links()}}
 
         </div>
 

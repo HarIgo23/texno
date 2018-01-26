@@ -355,7 +355,7 @@ img.brand{
 
 input[type="submit"]{
 	background-image: url(../../images/search.png);
-	background-color: transparent; 
+	background-color: transparent;
 	background-size: 20px;
 	border: none;
 	outline: none;
@@ -365,6 +365,21 @@ input[type="submit"]{
 	right: 35px;
 	top: 5px;
 }
+
+#btn-lol{
+	/*background-image: url(../../images/search.png);*/
+	/*background-color: transparent; */
+	background-size: 20px;
+	border: none;
+	outline: none;
+	/*width: 20px;*/
+	/*height: 20px;*/
+	position: relative;
+	left: 30px;
+	right: 35px;
+	top: 15px;
+}
+
 @media screen and (min-width: 992px) and (max-width: 1200px){
 	input[type="submit"]{
 		top: -30px;

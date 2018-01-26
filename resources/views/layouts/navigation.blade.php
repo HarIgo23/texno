@@ -114,7 +114,7 @@
 
         <!-- jQuery -->
         <script src="{{asset('js/jquery.min.js')}}"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.1/bootstrap3-typeahead.min.js"></script>
+        <script src="{{asset('js/bootstrap3-typeahead-for-main.min.js')}}"></script>
         <!-- jQuery Easing -->
         <script src="{{asset('js/jquery.easing.1.3.js')}}"></script>
         <!-- Bootstrap -->

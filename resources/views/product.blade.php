@@ -71,8 +71,9 @@
             <div class="col-md-12 col-xs-12">
                 <div class="all-characteristics col-md-9 col-xs-7 ">
                     <form method="post" action="{{route('buy',['prod_id'=>$product->prod_id])}}#message">
-                    <input type="submit" value="купить" class="btn btn-primary">
-                    {{csrf_field()}}
+                        <button type="submit" class="btn btn-primary" style="border: none">купить</button>
+                        {{--<input type="submit" value="купить" class="btn btn-primary">--}}
+                        {{csrf_field()}}
                     </form>
                 </div>
             </div>

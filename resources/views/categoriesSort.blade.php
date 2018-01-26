@@ -1,5 +1,3 @@
-
-
 @extends('layouts.navcatalog')
 
 @section('contentCatalog')
@@ -54,7 +52,8 @@
                         <option value="5" @if(5===$sort) selected @endif>Популярности</option>
                     </select>
                 </div>
-                <input type="submit" value="сортировать" class="btn btn-primary">
+                <button type="submit" class="btn btn-primary" id="btn-lol">сортировать</button>
+                {{--<input type="submit" value="сортировать" class="btn btn-primary">--}}
                 {{csrf_field()}}
             </form>
         </div>
@@ -76,7 +75,11 @@
                                     </a>
                                 </h4>
                                 <p class="card-text">{{$product['price']}} руб.</p>
-                                <a href="#" class="btn btn-primary">Купить</a>
+                                <form method="post" action="{{route('buy',['prod_id'=>$product->prod_id])}}#message">
+                                    <button type="submit" class="btn btn-primary">купить</button>
+                                    {{--<input type="submit" value="купить" class="btn btn-primary">--}}
+                                    {{csrf_field()}}
+                                </form>
                             </div>
                         </div>
                     </div>

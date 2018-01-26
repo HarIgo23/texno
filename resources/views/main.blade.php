@@ -40,7 +40,7 @@
                     <div class="col-md-4 main-screen-search">
                         <form method="post" action="{{route('product.Search')}}">
 
-                            <input type="text" class="typeahead" name="search" placeholder="поиск">
+                            <input type="text" class="typeahead" name="search" placeholder="поиск" autocomplete="off">
                             <input type="submit" class="loop" value="">
                             {{ csrf_field() }}
 
