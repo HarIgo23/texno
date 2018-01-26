@@ -59,7 +59,7 @@
         <div class="gtco-container">
             <div class="row">
                 <div class="col-xs-2">
-                    <div id="gtco-logo"><a href="{{route('mainPage')}}">ABAZABA.</a></div>
+                    <div id="gtco-logo"><a href="{{route('mainPage')}}">ABAZABA.BY</a></div>
                 </div>
                 <div class="col-xs-10 text-right menu-1">
                     <ul>
@@ -160,7 +160,7 @@
                         <div class="row copyright">
                             <div class="col-md-12">
                                 <p class="pull-left">
-                                    <small class="block">&copy; 2017 ABAZABA. Все права защищены.</small>
+                                    <small class="block">&copy; 2017 ABAZABA.BY Все права защищены.</small>
                                 </p>
                                 <p class="pull-right">
                                 <ul class="gtco-social-icons pull-right">
